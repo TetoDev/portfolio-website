@@ -1,0 +1,89 @@
+html {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+}
+
+header {
+    background-color: white;
+}
+
+header div {
+    height: 6rem;
+    overflow: hidden;
+}
+
+header div h1 {
+    display: inline-block;
+    padding: 2rem 3rem;
+    margin: 0;
+    color: #161032;
+}
+
+header div a {
+    float: right;
+    margin: 2.5rem 3rem;
+    text-decoration: none;
+    font-size: 20px;
+    color: #161032;
+    text-align: center;
+}
+
+.hero {
+    background-color: white;
+    height: 64rem;
+    overflow: hidden;
+}
+
+.spacer {
+    height: 14rem;
+}
+
+#hero_text_container {
+    width: min-content;
+    background-color: white;
+    margin: 0 12rem;
+}
+
+#hero_text1, #hero_text2, #hero_text3 {
+    
+    font-size: 78px;
+    font-weight: 900;
+    display: inline;
+    margin: 0.1rem 0rem;
+    padding: 0 3.5rem;
+    font-style: italic;
+    text-align: left;
+    overflow: hidden;
+    color: black;
+    cursor: pointer;
+}
+#hero_text1 {
+    transition: all 0.2s ease;
+    background-color: #FAFF81;
+    margin: 0.1rem 0 0 8rem;
+}
+#hero_text2 {
+    transition: all 0.2s ease;
+    background-color: #FFC53A;
+    margin: 0.1rem 0 0 4rem;
+}
+#hero_text3 {
+    transition: all 0.2s ease;
+    background-color: #E06D06;
+    margin: 0.1rem 0 0 0;
+}
+
+#hero_text1:hover, #hero_text2:hover, #hero_text3:hover {
+    color: white;
+    background-color: black;
+    font-size: 84px;
+}
+
+footer {
+    background-color: #161032;
+}
