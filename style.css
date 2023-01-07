@@ -371,6 +371,7 @@ header div a:hover {
 }
 
 #links a {
+    transition: all 0.2s ease;
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -381,6 +382,11 @@ header div a:hover {
     font-weight: 400;
     padding: 1rem 4rem;
     margin: 1rem 5rem;
+}
+
+#links a:hover {
+    background-color: white;
+    color:black
 }
 
 #sport {
