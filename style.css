@@ -15,62 +15,83 @@ header {
 header div {
     height: 6rem;
     overflow: hidden;
+    border-bottom: #eeeeee solid;
+    border-width: 1;
+    padding: 1rem 0;
 }
 
 header div h1 {
     display: inline-block;
-    padding: 2rem 3rem;
+    padding: 0.8rem 4rem;
     margin: 0;
-    color: #161032;
+    color: black;
+    font-weight: 900;
+    font-size: 60px;
 }
 
 header div a {
+    transition: all 0.2s ease;
     float: right;
-    margin: 2.5rem 3rem;
+    margin: 1.4rem 4rem;
+    padding: 0.5rem;
     text-decoration: none;
-    font-size: 20px;
-    color: #161032;
+    font-size: 30px;
+    color: black;
     text-align: center;
+    border-radius: 0;
+    border-style: solid;
+    border-color: black;
+}
+
+header div a:hover {
+    font-size: 31px;
+    border-color: black;
+    background-color: black;
+    color: white;
 }
 
 .hero {
     background-color: white;
-    height: 64rem;
-    overflow: hidden;
+    height: 50rem;
 }
 
-.spacer {
-    height: 14rem;
+.horizontal_spacer {
+    width: 5%;
+    display: inline-block;
+}
+
+.vertical_spacer {
+    height: 5%;
+    display: block;
 }
 
 #hero_text_container {
     width: min-content;
     background-color: white;
-    margin: 0 12rem;
+    margin: 10% 0 0 10%;
+    display: inline-block;
 }
 
 #hero_text1, #hero_text2, #hero_text3 {
     
-    font-size: 78px;
+    font-size: 88px;
     font-weight: 900;
     display: inline;
     margin: 0.1rem 0rem;
     padding: 0 3.5rem;
     font-style: italic;
     text-align: left;
-    overflow: hidden;
     color: black;
-    cursor: pointer;
 }
 #hero_text1 {
     transition: all 0.2s ease;
     background-color: #FAFF81;
-    margin: 0.1rem 0 0 8rem;
+    margin: 0.1rem 0 0 16%;
 }
 #hero_text2 {
     transition: all 0.2s ease;
     background-color: #FFC53A;
-    margin: 0.1rem 0 0 4rem;
+    margin: 0.1rem 0 0 8%;
 }
 #hero_text3 {
     transition: all 0.2s ease;
@@ -81,7 +102,113 @@ header div a {
 #hero_text1:hover, #hero_text2:hover, #hero_text3:hover {
     color: white;
     background-color: black;
-    font-size: 84px;
+    font-size: 92px;
+}
+
+.hero img{
+    transition: all 0.2s ease;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    width: 30%;
+    float: right;
+    margin: 5% 12% 0 0;
+    cursor: pointer;
+}
+
+.hero img:hover {
+    border-color: black;
+}
+
+.aboutme {
+    background-color: #272727;
+    color: white;
+}
+
+.aboutme h1 {
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    text-overflow: clip;
+    margin: 0 auto;
+    padding: 4rem 0;
+    background-color: black;
+}
+
+.display_card h2{
+    text-align: center;
+    font-size: 28px;
+    margin: 0.5rem 0 0.4rem 0;
+    padding: 1.1rem 1.5rem;
+    display: inline-block;
+    background-color: black;
+    font-weight: 900;
+}
+
+.display_card {
+    background-color: #373737;
+    padding: 2rem 2rem;
+    border-radius: 0.2rem;
+    width: 24rem;
+    margin: 1rem 2rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.display_card p {
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#display_card_img {
+    width: 150px;
+    float: right;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 30px;
+}
+
+.card_line {
+    display: block;
+    text-align: center;
+}
+
+#css {
+    width: 80px;
+}
+
+#git {
+    width: 90px;
+}
+
+#html {
+    width: 100px;
+}
+
+#java {
+    width: 90px;
+}
+
+#javascript {
+    width: 90px;
+}
+
+#mongodb {
+    width: 50px;
+}
+
+#mysql {
+    width: 110px;
+}
+
+#python {
+    width: 90px;
+}
+
+#react {
+    width: 100px;
 }
 
 footer {
