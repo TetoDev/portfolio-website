@@ -124,6 +124,7 @@ header div a:hover {
 .aboutme {
     background-color: #272727;
     color: white;
+    height: fit-content;
 }
 
 .aboutme h1 {
@@ -132,7 +133,7 @@ header div a:hover {
     text-align: center;
     text-overflow: clip;
     margin: 0 auto;
-    padding: 4rem 0;
+    padding: 6rem 0;
     background-color: black;
 }
 
@@ -162,21 +163,33 @@ header div a:hover {
     line-height: 1.5;
 }
 
-#display_card_img {
-    width: 150px;
-    float: right;
-    display: block;
-    margin: 1.5rem auto;
-    border-radius: 30px;
+.card_container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+#current_proj_img {
+    width: 258px;
 }
 
 .card_line {
     display: block;
     text-align: center;
+    padding: 0 0 2rem 0;
+}
+
+#tech_stack {
+    width: 90%;
+    margin-top: 3rem;
+}
+
+#tech_stack img {
+    display: inline-block;
+    margin: 1rem 1rem;
 }
 
 #css {
-    width: 80px;
+    width: 70px;
 }
 
 #git {
@@ -184,7 +197,7 @@ header div a:hover {
 }
 
 #html {
-    width: 100px;
+    width: 105px;
 }
 
 #java {
@@ -211,6 +224,214 @@ header div a:hover {
     width: 100px;
 }
 
+#tux {
+    width: 85px
+}
+
+#aws{
+    width: 110px;
+}
+
+#solidity {
+    width: 60px;
+}
+
+#firebase {
+    width: 65px
+}
+
+.experience {
+    background-color: white;
+    padding-bottom: 4rem;
+}
+
+#experience_header {
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    text-overflow: clip;
+    margin: 0 auto;
+    padding: 6rem 0 2rem 0;
+    color: black;
+}
+
+.experience_item {
+    background-color: #272727;
+    margin: 4rem 8%;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0.2rem;
+}
+
+.experience_item img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1rem;
+}
+
+.text_experience_container {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 auto;
+    text-align: left;
+}
+
+.text_experience_container p {
+    font-size: 20px;
+}
+
+.text_experience_container .role{
+    text-align: right;
+    font-style: italic;
+    font-weight: 400;
+}
+
+#hermes{
+    transition: all 0.2s ease;
+    background-color: #FAFF81;
+}
+
+#hermes img {
+    width: 200px;
+}
+
+#arkp {
+    transition: all 0.2s ease;
+    background-color: #FFC53A;
+}
+
+#arkp img {
+    width: 200px;
+}
+
+#vyba {
+    transition: all 0.2s ease;
+    background-color: #E06D06;
+}
+
+#vyba img {
+    width: 200px;
+}
+
+#hermes:hover, #arkp:hover, #vyba:hover {
+    background-color: black;
+    color: white;
+    margin: 3rem 7.5%;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    font-size: 24px;
+}
+
+
+.hire_me{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+#hire_black {
+    background-color: black;
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+#hire_black p {
+    margin-top: 4rem;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#hire_hero {
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    text-overflow: clip;
+    margin: 0 auto;
+    padding: 8rem 0;
+    color: white;
+}
+
+.hire_me img {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#links {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:scroll;
+}
+
+#links a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    border-style: solid;
+    border-color: white;
+    font-style: normal;
+    font-weight: 400;
+    padding: 1rem 4rem;
+    margin: 1rem 5rem;
+}
+
+#sport {
+    background-image: url("img/me_sport.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300px;
+}
+
+#sport div {
+    background-color: rgba(27, 27, 27, 0.4);
+    height: 300px;
+    width: 100%;
+}
+
+
+
+#bottom_line {
+    background-color: #272727;
+    width: 100%;
+    height: 3px;
+    margin: 6rem auto 0 auto;
+    overflow: hidden;
+}
+
+#btp {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    font-style: bold;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    margin: 2.8rem 6rem 0rem 4rem;
+    float: right;
+}
+
+#bottom_header {
+    font-size: 60px;
+    font-weight: 900;
+    text-align: left;
+    text-overflow: clip;
+    margin: 0 0 1rem 6rem;
+    padding: 4rem 0;
+    color: white;
+    display: inline-block;
+}
+
 footer {
-    background-color: #161032;
+    background-color: black;
 }
