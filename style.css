@@ -1,58 +1,41 @@
 html {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    padding: 0;
 }
 
 body {
     margin: 0;
     background-color: white;
+    padding: 0;
 }
 
 header {
-    background-color: white;
+    background-color: transparent;
 }
 
-header div {
+#top_bar {
     height: 6rem;
     overflow: hidden;
-    border-bottom: #eeeeee solid;
-    border-width: 1;
+    width: 100%;
     padding: 1rem 0;
+    position: absolute;
+    z-index: 10;
 }
 
-header div h1 {
+#page_header {
     display: inline-block;
     padding: 0.8rem 4rem;
     margin: 0;
     color: black;
     font-weight: 900;
     font-size: 60px;
+    border-radius: 2px;
 }
 
-header div a {
-    transition: all 0.2s ease;
-    float: right;
-    margin: 1.4rem 4rem;
-    padding: 0.5rem;
-    text-decoration: none;
-    font-size: 30px;
-    color: black;
-    text-align: center;
-    border-radius: 0;
-    border-style: solid;
-    border-color: black;
-}
-
-header div a:hover {
-    font-size: 31px;
-    border-color: black;
-    background-color: black;
-    color: white;
-}
 
 .hero {
     background-color: white;
-    height: 50rem;
     overflow: hidden;
 }
 
@@ -66,11 +49,21 @@ header div a:hover {
     display: block;
 }
 
-#hero_text_container {
-    width: min-content;
+.hero_wrapper {
+    position: static;
     background-color: white;
-    margin: 10% 0 4% 6.5%;
-    display: inline-block;
+    margin: 0 auto;
+    min-width: 700px;
+}
+
+#hero_text_container {
+    width:min-content;
+    background-color: transparent;
+    left: 0;
+    right: 0;
+    margin: 16% -20% 4% 6.5%;
+    z-index: 2;
+    position: absolute;
 }
 
 #hero_text1, #hero_text2, #hero_text3 {
@@ -82,22 +75,23 @@ header div a:hover {
     padding: 0 3.5rem;
     font-style: italic;
     text-align: left;
-    color: black;
+    color: white;
 }
+
 #hero_text1 {
     transition: all 0.2s ease;
-    background-color: #FAFF81;
-    margin: 0.1rem 0 0 16%;
+    background-color: black;
+    margin: -0.2rem 0 0 16%;
 }
 #hero_text2 {
     transition: all 0.2s ease;
-    background-color: #FFC53A;
-    margin: 0.1rem 0 0 8%;
+    background-color: black;
+    margin: -0.2rem 0 0 8%;
 }
 #hero_text3 {
     transition: all 0.2s ease;
-    background-color: #E06D06;
-    margin: 0.1rem 0 0 0;
+    background-color: black;
+    margin: -0.2rem 0 0 0;
 }
 
 #hero_text1:hover, #hero_text2:hover, #hero_text3:hover {
@@ -110,11 +104,22 @@ header div a:hover {
     position: relative;
     float: right;
     overflow: hidden;
-    height: 50rem;
+    height: 60rem;
     width: 64rem;
     background-image: url("img/me_sport.jpg");
     background-size: cover;
-    background-position: center;
+    background-position:top;
+    z-index: 1;
+    margin-top: 2rem;
+}
+
+#hero_img p {
+    float: right;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    font-size: 20px;
+    margin: 52rem 3rem 6rem 0rem;
 }
 
 #skewed {
@@ -124,8 +129,19 @@ header div a:hover {
     bottom: 0;
     right: 0;
     border-width: 0 0 1500px 100px;
-    border-color: transparent transparent transparent white;
+    border-color: white white transparent white;
     border-style: solid;
+}
+
+#skewed2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-width: 100px 1500px 0 0;
+    border-color: white transparent transparent transparent;
+    border-style: solid;  
 }
 
 .aboutme {
@@ -287,11 +303,14 @@ header div a:hover {
 }
 
 .experience_item {
-    background-color: #272727;
+    transition: all 0.2s ease;
     margin: 4rem 8%;
     padding: 2rem;
     text-align: center;
     border-radius: 0.2rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
 }
 
 .experience_item img {
@@ -317,27 +336,12 @@ header div a:hover {
     font-weight: 400;
 }
 
-#hermes{
-    transition: all 0.2s ease;
-    background-color: #FAFF81;
-}
-
 #hermes img {
     width: 200px;
 }
 
-#arkp {
-    transition: all 0.2s ease;
-    background-color: #FFC53A;
-}
-
 #arkp img {
     width: 200px;
-}
-
-#vyba {
-    transition: all 0.2s ease;
-    background-color: #E06D06;
 }
 
 #vyba img {
@@ -383,7 +387,7 @@ header div a:hover {
     text-align: center;
     text-overflow: clip;
     margin: 0 auto;
-    padding: 8rem 0;
+    padding: 4rem 0;
     color: white;
 }
 
@@ -420,7 +424,7 @@ header div a:hover {
     color:black
 }
 
-#sport {
+#coding {
     background-image: url("img/coding.webp");
     background-position: center;
     background-size: cover;
@@ -429,21 +433,12 @@ header div a:hover {
     height: 300px;
 }
 
-#sport div {
+#coding div {
     background-color: rgba(27, 27, 27, 0.4);
     height: 300px;
     width: 100%;
 }
 
-
-
-#bottom_line {
-    background-color: #272727;
-    width: 100%;
-    height: 3px;
-    margin: 6rem auto 0 auto;
-    overflow: hidden;
-}
 
 #btp {
     text-decoration: none;
@@ -454,8 +449,9 @@ header div a:hover {
     background-color: white;
     color: black;
     padding: 2rem;
-    margin: 2.8rem 6rem 0rem 4rem;
-    float: right;
+    margin: 2rem auto 2rem auto;
+    display: block;
+    width: 12rem;
 }
 
 #bottom_header {
@@ -471,4 +467,5 @@ header div a:hover {
 
 footer {
     background-color: black;
+    height: 700px;
 }
