@@ -53,6 +53,7 @@ header div a:hover {
 .hero {
     background-color: white;
     height: 50rem;
+    overflow: hidden;
 }
 
 .horizontal_spacer {
@@ -68,7 +69,7 @@ header div a:hover {
 #hero_text_container {
     width: min-content;
     background-color: white;
-    margin: 10% 0 0 10%;
+    margin: 10% 0 4% 6.5%;
     display: inline-block;
 }
 
@@ -105,24 +106,30 @@ header div a:hover {
     font-size: 92px;
 }
 
-.hero img{
-    transition: all 0.2s ease;
-    border-radius: 50%;
-    border-style: solid;
-    border-color: black;
-    border-width: 4px;
-    width: 30%;
+#hero_img {
+    position: relative;
     float: right;
-    margin: 5% 12% 0 0;
-    cursor: pointer;
+    overflow: hidden;
+    height: 50rem;
+    width: 64rem;
+    background-image: url("img/me_sport.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
-.hero img:hover {
-    border-color: black;
+#skewed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-width: 0 0 1500px 100px;
+    border-color: transparent transparent transparent white;
+    border-style: solid;
 }
 
 .aboutme {
-    background-color: #272727;
+    background-color: black;
     color: white;
     height: fit-content;
 }
@@ -133,7 +140,7 @@ header div a:hover {
     text-align: center;
     text-overflow: clip;
     margin: 0 auto;
-    padding: 6rem 0;
+    padding: 6rem 0 4rem 0;
     background-color: black;
 }
 
@@ -145,16 +152,24 @@ header div a:hover {
     display: inline-block;
     background-color: black;
     font-weight: 900;
+    color: white;
 }
 
 .display_card {
-    background-color: #373737;
+    transition: all 0.2s ease;
+    background-color: white;
     padding: 2rem 2rem;
     border-radius: 0.2rem;
     width: 24rem;
     margin: 1rem 2rem;
     display: inline-block;
     text-align: center;
+    min-width: 24rem;
+    min-height: 24rem;
+    color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
 }
 
 .display_card p {
@@ -163,8 +178,19 @@ header div a:hover {
     line-height: 1.5;
 }
 
+.display_card:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+}
+
+.display_card:hover h2 {
+    color: black;
+    background-color: white;
+}
+
 .card_container {
-    padding-top: 6rem;
+    padding-top: 2rem;
     padding-bottom: 6rem;
 }
 
@@ -173,14 +199,19 @@ header div a:hover {
 }
 
 .card_line {
-    display: block;
+    display: flex;
     text-align: center;
     padding: 0 0 2rem 0;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+
 }
 
 #tech_stack {
     width: 90%;
     margin-top: 3rem;
+    min-height: 0;
 }
 
 #tech_stack img {
@@ -390,7 +421,7 @@ header div a:hover {
 }
 
 #sport {
-    background-image: url("img/me_sport.jpg");
+    background-image: url("img/coding.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
