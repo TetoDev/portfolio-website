@@ -31,7 +31,10 @@ header {
     font-weight: 900;
     font-size: 60px;
     border-radius: 2px;
+    overflow: hidden;
 }
+
+
 
 
 .hero {
@@ -57,7 +60,7 @@ header {
 }
 
 #hero_text_container {
-    width:min-content;
+    width: min-content;
     background-color: transparent;
     left: 0;
     right: 0;
@@ -66,8 +69,10 @@ header {
     position: absolute;
 }
 
-#hero_text1, #hero_text2, #hero_text3 {
-    
+#hero_text1,
+#hero_text2,
+#hero_text3 {
+
     font-size: 88px;
     font-weight: 900;
     display: inline;
@@ -83,18 +88,22 @@ header {
     background-color: black;
     margin: -0.2rem 0 0 16%;
 }
+
 #hero_text2 {
     transition: all 0.2s ease;
     background-color: black;
     margin: -0.2rem 0 0 8%;
 }
+
 #hero_text3 {
     transition: all 0.2s ease;
     background-color: black;
     margin: -0.2rem 0 0 0;
 }
 
-#hero_text1:hover, #hero_text2:hover, #hero_text3:hover {
+#hero_text1:hover,
+#hero_text2:hover,
+#hero_text3:hover {
     color: white;
     background-color: black;
     font-size: 92px;
@@ -108,9 +117,9 @@ header {
     width: 64rem;
     background-image: url("img/me_sport.jpg");
     background-size: cover;
-    background-position:top;
+    background-position: top;
     z-index: 1;
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
 #hero_img p {
@@ -141,8 +150,21 @@ header {
     right: 0;
     border-width: 100px 1500px 0 0;
     border-color: white transparent transparent transparent;
-    border-style: solid;  
+    border-style: solid;
 }
+
+@media only screen and (max-width: 1500px) {
+    #hero_img {
+        margin-top: 4rem;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    #hero_text_container {
+        margin-top: 40%;
+    }
+}
+
 
 .aboutme {
     background-color: black;
@@ -160,7 +182,7 @@ header {
     background-color: black;
 }
 
-.display_card h2{
+.display_card h2 {
     text-align: center;
     font-size: 28px;
     margin: 0.5rem 0 0.4rem 0;
@@ -274,7 +296,7 @@ header {
     width: 85px
 }
 
-#aws{
+#aws {
     width: 110px;
 }
 
@@ -344,10 +366,19 @@ header {
     line-height: 2;
 }
 
-.text_experience_container .role{
+.text_experience_container .role {
     text-align: right;
     font-style: italic;
     font-weight: 400;
+}
+
+@media only screen and (max-width:1150px) {
+    .experience_item img {
+        left: 140px
+    }
+    .text_experience_container {
+        margin-left: 250px;
+    }
 }
 
 #hermes img {
@@ -362,7 +393,9 @@ header {
     width: 200px;
 }
 
-#hermes:hover, #arkp:hover, #vyba:hover {
+#hermes:hover,
+#arkp:hover,
+#vyba:hover {
     background-color: black;
     color: white;
     margin: 3rem 7.5%;
@@ -373,7 +406,7 @@ header {
 }
 
 
-.hire_me{
+.hire_me {
     display: flex;
     justify-content: left;
     align-items: flex-start;
@@ -432,7 +465,7 @@ header {
 
 #links a:hover {
     background-color: white;
-    color:black
+    color: black
 }
 
 #coding {
@@ -479,4 +512,11 @@ header {
 footer {
     background-color: black;
     height: 700px;
+}
+
+footer p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 4rem 0 0 0;
 }
